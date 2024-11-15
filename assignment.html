@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 1 HTML</title>
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#employee">Add Employee</a></li>
+                <li><a href="#vehicle">Add Vehicle</a></li>
+                <li><a href="#feedback">Give Feedback</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wSea4YuTq1WQhGOLBTPRps6qIlRzw1GlSA&s" alt="Parking image" width="100%">
+    </header>
+    <section class="employee_region" id="employee">
+        <h2>Add EMPLOYEE</h2>
+        <form action="#">
+            <label for="full-name">Full Name:</label><br>
+            <input type="text" id="full_name" name="full-name" required><br>
+
+            <label for="Gender">Gender:</label><br>
+            <input type="radio" id="male-gender" name="Gender" value="Male">
+            <label for="male-gender">Male</label>
+            <input type="radio" id="female-gender" name="Gender" value="Female">
+            <label for="female-gender">Female</label>
+            <br><br>
+
+            <label for="email">Email Id:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+            <label for="confirm-password">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required><br><br>
+
+            <label for="contact-number">Contact Number:</label><br>
+            <input type="tel" id="contact-number" name="contact-number" title="Please enter a valid 10-digit phone number." required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <br><br><hr>
+    
+    <section class="vehicle_region" id="vehicle">
+        <h2>Add VEHICLE</h2>
+        <form action="#">
+            <label for="company-name">Vehicle Make(Company):</label><br>
+            <input type="text" id="company_name" name="company-name" required><br><br>
+
+            <label for="vehicle-model">Vehicle Model:</label><br>
+            <input type="text" id="vehicle_model" name="vehicle-model" required><br><br>
+
+            <label for="vehicle-type">Type:</label><br>
+            <select id="vehicle_type" name="vehicle-type" required>
+                <option value="" disabled selected>Select Vehicle type</option>
+                <option value="car">Car</option>
+                <option value="bike">Bike</option>
+            </select><br><br>
+
+
+            <label for="vehicle_number">Vehicle Number :</label><br>
+            <input type="text" id="vehicle-number" name="vehicle_number" required><br><br>
+
+            <label for="employee-id">Employee Id:</label><br>
+            <input type="text" id="employee_id" name="employee-id" required><br><br>
+
+            <label for="identification">Identification:</label><br>
+            <textarea name="identification" id="identification"></textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <br><br><hr>
+
+    <section class="feedback_region" id="feedback">
+        <h2>Add FEEDBACK</h2>
+        <form action="#">
+            <p><b>Get in touch</b></p>
+
+            <label for="feedback-name">Name:</label><br>
+            <input type="text" id="feedback_name" name="feedback-name" required><br><br>
+
+            <label for="feedback-email">Email Id:</label><br>
+            <input type="email" id="feedback_email" name="feedback-email" required><br><br>
+
+            <label for="feedback-subject">Subject :</label><br>
+            <input type="text" id="feedback_subject" name="feedback-subject" required><br><br>
+
+            <label for="feedback-message">Message:</label><br>
+            <textarea name="feedback-message" id="feedback_message"></textarea>
+            <br><br>
+
+            <button type="submit" value="Submit">Send Email</button>
+        </form>
+    </section>
+
+    <br><br><hr>
+
+    <section class="pricing_region" id="pricing">
+        <h2>Pricing Section</h2>
+        <div style="display: flex; gap: 5px; justify-content: center;">
+            <div style="border: 2px solid black; width: 30%; text-align: center;">
+                <p><strong>CYCLE</strong></p>
+                <p>$100/Month</p>
+                <p>$5 Daily</p>
+                <p>$100 Monthly</p>
+                <p>$500 Yearly</p>
+
+                <button>PURCHASE NOW</button>
+            </div>
+            <div style="border: 2px solid black; width: 30%; text-align: center;">
+                <p><strong>MOTORCYCLE</strong></p>
+                <p>$200/Month</p>
+                <p>$10 Daily</p>
+                <p>$200 Monthly</p>
+                <p>$1000 Yearly</p>
+
+                <button>PURCHASE NOW</button>
+            </div>
+            <div style="border: 2px solid black; width: 30%; text-align: center;">
+                <p><strong>FOUR WHEELERS</strong></p>
+                <p>$500/Month</p>
+                <p>$20 Daily</p>
+                <p>$500 Monthly</p>
+                <p>$3500 Yearly</p>
+
+                <button>PURCHASE NOW</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
